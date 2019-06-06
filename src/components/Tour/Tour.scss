@@ -1,0 +1,63 @@
+@import "../../index.scss"; 
+
+.tour{
+    background: $mainGrey;
+    border-radius: 0.8rem;
+    margin: 1rem 0; 
+    img{
+        width: 100%;
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+        display: block;
+    }
+}
+
+.img-container{
+    position: relative;
+}
+
+.close-btn{
+    position: absolute; 
+    display: block;
+    top:5%;
+    right:5%; 
+    color:$mainHover; 
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+
+//when we drag the mouse over the picture, it sets the button opacity to 1 which displays the button to user
+.img-container:hover .close-btn{
+    opacity:1;
+}
+
+.tour-info{
+    padding: 1rem 0.5rem; 
+}
+
+h3{
+    text-transform: uppercase;
+    color:$mainColor;
+}
+
+
+h4, h5{
+    text-transform: capitalize;
+}
+
+h4{
+    color:$mainBlack;
+    margin: 0.2rem 0 0.6rem 0; 
+}
+
+h5{
+    span{
+        color:$mainColor;
+        margin:0.5rem; 
+        font-size: 1.2rem; 
+        cursor: pointer;
+
+    }
+}
